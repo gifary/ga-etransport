@@ -1,0 +1,20 @@
+{
+    "name": "supala/etransport",
+    "description": "model ga etransport",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "muhammad gifary",
+            "email": "muhammadgifary@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.6|7.x|8.x",
+        "illuminate/database": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Supala\\ETransport\\": "src/"
+        }
+    }
+}
