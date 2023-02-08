@@ -3,10 +3,14 @@
 namespace Supala\ETransport\Models\Transport;
 
 
+use Illuminate\Notifications\Notifiable;
 use Supala\ETransport\Models\BaseModelETransport;
+use Supala\ETransport\Models\User;
 
 class Driver extends BaseModelETransport
 {
+    use Notifiable;
+
     protected $connection = 'transport_system';
     protected $table = 'transport_system.m_driver';
     protected $primaryKey = 'id_driver';
@@ -16,6 +20,11 @@ class Driver extends BaseModelETransport
 
     CONST NON_ACTV = 'NON-ACTV';
     const ACTV = 'ACTV';
+
+    public function routeNotificationForFcm()
+    {
+        return $this->device_token;
+    }
 
     public function vehicles() {
         return $this->belongsToMany('Supala\ETransport\Models\Transport\Vehicle','Supala\ETransport\Models\Transport\DriverVehicle','id_driver','id_vehicle');

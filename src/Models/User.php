@@ -140,4 +140,9 @@ class User extends BaseModelETransport
     public function altOfficer() {
         return $this->hasMany(DirectOfficer::class,'user_id','id');
     }
+
+    public function routeNotificationForFcm()
+    {
+        return $this->device_token;
+    }
 }
