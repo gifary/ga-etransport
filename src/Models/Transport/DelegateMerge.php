@@ -2,9 +2,9 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class DelegateMerge extends Model
+class DelegateMerge extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'delegate_merge';

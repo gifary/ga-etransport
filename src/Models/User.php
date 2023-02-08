@@ -8,12 +8,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 
 
-class User extends Model
+class User extends BaseModelETransport
 {
     use Notifiable;
     use SoftDeletes;
 
-    protected $connection = 'pgsql';
+
     protected $table = 'public.cms_users';
     protected $fillable = ['username', 'email', 'password','last_login_at','status','device_token'];
     protected $hidden = ['password', 'remember_token','ad_objectguid','ad_thumbnail_photo'];

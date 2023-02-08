@@ -2,9 +2,9 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class DelegateVoucher extends Model
+class DelegateVoucher extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'delegate_voucher';

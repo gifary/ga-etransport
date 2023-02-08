@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class Setting extends Model
+class Setting extends BaseModelETransport
 {
     protected $table ='settings';
     protected $connection = 'transport_system';

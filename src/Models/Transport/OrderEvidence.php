@@ -2,10 +2,10 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 use \Illuminate\Support\Facades\Storage;
 
-class OrderEvidence extends Model
+class OrderEvidence extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'order_evidences';

@@ -2,11 +2,9 @@
 
 namespace Supala\ETransport\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class PersonnelArea extends Model
+class PersonnelArea extends BaseModelETransport
 {
-    protected $connection = 'pgsql';
+
     protected $table = 'public.m_personnel_area';
     protected $fillable = ['id', 'personnel_area', 'description'];
 

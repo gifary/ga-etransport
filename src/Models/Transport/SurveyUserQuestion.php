@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class SurveyUserQuestion extends Model
+class SurveyUserQuestion extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'transport_system.survey_user_questions';

@@ -2,10 +2,7 @@
 
 namespace Supala\ETransport\Models;
 
-
-use Illuminate\Database\Eloquent\Model;
-
-class CompanyCode extends Model
+class CompanyCode extends BaseModelETransport
 {
     protected $table = 'm_company_code';
     protected $fillable = ['id', 'company_code', 'description'];

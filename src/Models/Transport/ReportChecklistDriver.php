@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class ReportChecklistDriver extends Model
+class ReportChecklistDriver extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'report_checklist_driver';

@@ -2,9 +2,9 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class ReportGrab extends Model
+class ReportGrab extends BaseModelETransport
 {
     protected $table ='reports_grab';
     protected $connection = 'transport_system';

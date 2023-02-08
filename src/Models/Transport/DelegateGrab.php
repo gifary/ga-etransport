@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class DelegateGrab extends Model
+class DelegateGrab extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'delegate_grab';

@@ -2,9 +2,7 @@
 
 namespace Supala\ETransport\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Province extends Model
+class Province extends BaseModelETransport
 {
     protected $table = 'm_province';
     protected $fillable = ['id', 'name'];

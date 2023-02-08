@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 use Supala\ETransport\Models\OrgUnit;
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class Budget extends Model
+class Budget extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'm_budgets';

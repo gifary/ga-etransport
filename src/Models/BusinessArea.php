@@ -2,10 +2,7 @@
 
 namespace Supala\ETransport\Models;
 
-
-use Illuminate\Database\Eloquent\Model;
-
-class BusinessArea extends Model
+class BusinessArea extends BaseModelETransport
 {
     protected $table = 'm_business_area';
     protected $fillable = ['id', 'business_area', 'description'];

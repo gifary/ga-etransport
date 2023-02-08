@@ -3,10 +3,10 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Reimbursement extends Model
+class Reimbursement extends BaseModelETransport
 {
     use SoftDeletes;
 

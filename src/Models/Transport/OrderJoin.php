@@ -3,9 +3,9 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class OrderJoin extends Model
+class OrderJoin extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'order_join';

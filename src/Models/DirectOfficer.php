@@ -2,9 +2,7 @@
 
 namespace Supala\ETransport\Models;
 
-use Illuminate\Database\Eloquent\Model;
-
-class DirectOfficer extends Model
+class DirectOfficer extends BaseModelETransport
 {
     protected $table = 'cms_direct_officer';
 

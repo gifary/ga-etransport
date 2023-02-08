@@ -2,9 +2,9 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Illuminate\Database\Eloquent\Model;
+use Supala\ETransport\Models\BaseModelETransport;
 
-class VehicleUsage extends Model
+class VehicleUsage extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'vehicle_usage';

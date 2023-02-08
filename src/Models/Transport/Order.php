@@ -2,13 +2,11 @@
 
 namespace Supala\ETransport\Models\Transport;
 
-use Supala\ETransport\Models\PersonnelArea;
-use Supala\ETransport\Models\PersonnelSubArea;
 
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Supala\ETransport\Models\BaseModelETransport;
+use Supala\ETransport\Models\User;
 
-class Order extends Model
+class Order extends BaseModelETransport
 {
     protected $connection = 'transport_system';
     protected $table = 'order';
