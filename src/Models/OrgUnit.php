@@ -7,7 +7,7 @@ use Cache;
 class OrgUnit extends BaseModelETransport
 {
 
-    protected $table = 'm_org_unit';
+    protected $table = 'public.m_org_unit';
     protected $fillable = ['org_code','stext','ltext','parent_org_code','show_in_dropdown', 'personel_area', 'personel_sub_area'];
 
     protected $casts = [

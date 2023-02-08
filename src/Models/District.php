@@ -5,7 +5,7 @@ namespace Supala\ETransport\Models;
 
 class District extends BaseModelETransport
 {
-    protected $table = 'm_district';
+    protected $table = 'public.m_district';
     protected $fillable = ['id', 'name'];
 
     public function regency()

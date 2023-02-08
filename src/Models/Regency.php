@@ -4,7 +4,7 @@ namespace Supala\ETransport\Models;
 
 class Regency extends BaseModelETransport
 {
-    protected $table = 'm_regency';
+    protected $table = 'public.m_regency';
     protected $fillable = ['id', 'id_province', 'name'];
 
     public function province()

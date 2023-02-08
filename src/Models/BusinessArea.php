@@ -4,7 +4,7 @@ namespace Supala\ETransport\Models;
 
 class BusinessArea extends BaseModelETransport
 {
-    protected $table = 'm_business_area';
+    protected $table = 'public.m_business_area';
     protected $fillable = ['id', 'business_area', 'description'];
     protected $visible = ['company_code','business_area', 'description'];
 

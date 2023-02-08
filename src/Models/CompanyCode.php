@@ -4,7 +4,7 @@ namespace Supala\ETransport\Models;
 
 class CompanyCode extends BaseModelETransport
 {
-    protected $table = 'm_company_code';
+    protected $table = 'public.m_company_code';
     protected $fillable = ['id', 'company_code', 'description'];
     protected $visible = ['company_code', 'description'];
 
