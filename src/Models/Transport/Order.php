@@ -37,7 +37,11 @@ class Order extends BaseModelETransport
     }
 
     public function user() {
-        return $this->belongsTo(User::class,'id_user','id');
+        if (class_exists("App\Models\UserETransport")) {
+            return $this->belongsTo("App\Models\UserETransport",'id_user','id');
+        }else{
+            return $this->belongsTo(User::class,'id_user','id');
+        }
     }
 
     public function statusOrders() {

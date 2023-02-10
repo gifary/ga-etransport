@@ -16,7 +16,12 @@ class DelegateDriver extends BaseModelETransport
     }
 
     public function driver() {
-        return $this->belongsTo(Driver::class,'id_driver','id_driver');
+        if (class_exists("App\ModelsDriverETransport")) {
+            return $this->belongsTo("App\ModelsDriverETransport",'id_driver','id_driver');
+        }else{
+            return $this->belongsTo(Driver::class,'id_driver','id_driver');
+        }
+
     }
 
     public function vehicle() {
