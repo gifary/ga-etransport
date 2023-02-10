@@ -145,4 +145,10 @@ class User extends BaseModelETransport
     {
         return $this->device_token;
     }
+
+    public function customRoles()
+    {
+        return $this->belongsToMany(Role::class, 'public.cms_model_has_roles', 'model_id', 'role_id')
+            ->withPivot(['model_type']);
+    }
 }
