@@ -3,13 +3,11 @@
 namespace Supala\ETransport\Models\Transport;
 
 
-use Illuminate\Notifications\Notifiable;
 use Supala\ETransport\Models\BaseModelETransport;
 use Supala\ETransport\Models\User;
 
 class Driver extends BaseModelETransport
 {
-    use Notifiable;
 
     protected $connection = 'transport_system';
     protected $table = 'transport_system.m_driver';
